@@ -28,7 +28,7 @@ export const PhotoList = () => {
         {isloading && <div className="text-3xl font-bold m-10">Loading...</div>}
         <ul className="block max-h-[500px] border-4 p-8 overflow-auto rounded-md">
           {photos.map((photo: any, index: any) => (
-            <li key={index} className="cursor-pointer h-10 hover:bg-slate-200 hover:rounded-md flex gap-4 items-center">
+            <li key={index} className="cursor-pointer hover:bg-slate-200 hover:rounded-md flex gap-4 items-center">
               <div className="p-2 flex gap-4">
                 <input type="checkbox" className="cursor-pointer" />
                 <img src={photo.url} width={20} height={20} />
