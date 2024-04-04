@@ -8,7 +8,7 @@ export const PhotoList = () => {
   useEffect(() => {
     const getphotos = async () => {
       setIsLoading(true)
-      const photos = await Promise.all(Array(8).fill(fetch('https://jsonplaceholder.typicode.com/photos').then((res) => res.json())));
+      const photos = await Promise.all(Array(1).fill(fetch('https://jsonplaceholder.typicode.com/photos').then((res) => res.json())));
       setPhoto(photos.flat());
       setIsLoading(false)
     }
